@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#611232">
+  <title>NEM × Kouchea · Versión 3 · Exploración interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="screen">
+    <header class="top"><div class="brand-lockup"><img class="government-logo" src="assets/gobierno-mexico.png" alt="Gobierno de México"><div class="brand">NEM <span>×</span> Kouchea</div></div><div class="topright"><span class="kouchea-logo"><img src="assets/kouchea-horizontal.png" alt="Kouchea"></span><span class="counter" id="counter"></span><button class="btn" id="menuButton" aria-expanded="false" aria-controls="menu">Secciones ☰</button></div></header>
+    <div class="bar" aria-hidden="true"><div id="progress"></div></div>
+    <main class="stage" id="stage" tabindex="-1"></main>
+    <footer class="footer"><div class="footer-info"><span class="small muted" id="sectionName"></span><span class="scroll-hint" id="scrollHint" hidden>Desplazar abajo ↓</span></div><div class="footer-tail"><div class="government-figure" role="img" aria-label="Joven mexicana con la bandera"></div><div class="footer-actions"><button class="btn home-navigation" id="home" data-goto="0" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>Volver al inicio</button><button class="btn" id="prev">← Anterior</button><button class="btn primary" id="next">Siguiente →</button></div></div></footer>
+  </div>
+  <div class="menu-backdrop" id="menuBackdrop" hidden></div><nav class="menu" id="menu" aria-label="Secciones de la presentación" hidden><div class="menu-head"><h2>Contenido</h2><button class="btn" id="menuClose" aria-label="Cerrar menú">×</button></div><div id="menuItems"></div></nav>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div></div><button class="btn" id="modalClose" aria-label="Cerrar semblanza">×</button></div><div id="modalContent"></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
